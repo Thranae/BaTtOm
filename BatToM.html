@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batman's Coffee Date</title>
+    <style>
+       body {
+            background-image: url('file:///C:/Users/Admin/Downloads/Proposal/Proposal/img/bg.png');
+            background-size: cover;
+            font-family: monospace, sans-serif;
+        }
+        
+        .container {
+            text-align: center;
+            margin-top: 100px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        #no-button {
+            background-color: red;
+            color: white;
+        }
+        #yes-button {
+        background-color: rgb(252, 102, 147);
+        color: white;
+        font-size: 24px; /* Increase the font size */
+        padding: 20px 40px; /* Increase the padding */
+        border-radius: 25px; /* Make the button rounder */
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+        transition: all 0.3s ease 0s; /* Add a transition effect */
+    }
+
+    #yes-button:hover {
+        background-color: rgb(252, 72, 117); /* Change the color when hovered */
+        box-shadow: 0px 15px 20px rgb(13, 14, 13); /* Change the shadow when hovered */
+        color: white;
+        transform: translateY(-7px); /* Move the button up when hovered */
+    }
+        
+        
+ 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="file:///C:/Users/Admin/Downloads/pinterestdownloader.com-1709570584.788819_prev_ui.png" alt="Batman" width="110" height="150">
+        <img src="file:///C:/Users/Admin/Downloads/Proposal/Proposal/img/heart.png" alt="heart" width="50" height="50">
+        <img src="file:///C:/Users/Admin/Downloads/cute-girl-cartoon-character-free-png.webp" alt="Batman" width="150" height="170" >
+        <h1>Hey chellam!!🧿🦋 Na Batman🦇.</h1>
+        <div class=""></div>
+        <h2>coffee kudika polaama?☕️</h2>
+        <button id="no-button" onmouseover="moveButton()">No</button>
+        <button id="yes-button" onclick="window.location.href='coffee.html'">Polaameyy!</button>
+    </div>
+
+    <script>
+        function moveButton() {
+            const noButton = document.getElementById('no-button');
+            noButton.style.position = 'absolute';
+            noButton.style.left = Math.random() * (window.innerWidth - 100) + 'px';
+            noButton.style.top = Math.random() * (window.innerHeight - 50) + 'px';
+        }
+
+        function showImpressiveMessage() {
+            alert("Thank you chellameyyyy!🌸💌");
+            
+        }
+    </script>
+</body>
+</html>
